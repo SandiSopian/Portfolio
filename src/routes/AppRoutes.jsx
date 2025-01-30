@@ -1,14 +1,19 @@
-import Navbar from "../components/Navbar/Navbar";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import HomePage from "../pages/HomePage";
+import AboutPage from "../pages/AboutPage";
+import ContactPage from "../pages/ContactPage";
+import WorkPage from "../pages/WorkPage";
 
 function AppRoutes() {
   return (
-    <div className="bg-indigo-600 bg-cover w-svw h-svh">
-      <Navbar>
-        <div>
-          <h1 className="text-white flex items-center">hello</h1>
-        </div>
-      </Navbar>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/work" element={<WorkPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
