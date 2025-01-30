@@ -9,11 +9,11 @@ import ProfileImg from "../assets/images/profile-picture.jpg";
 export const socialMedia = [
   {
     socialMediaName: "Email",
-    socialMediaLink: "sandis17@outlook.com",
+    socialMediaLink: "mailto:sandis17@outlook.com",
   },
   {
     socialMediaName: "linkedin",
-    socialMediaLink: "https://www.linkedin.com/in/sandis17/",
+    socialMediaLink: "https://www.linkedin.com/in/sandi-sopian-007623227/",
   },
   {
     socialMediaName: "Instagram",

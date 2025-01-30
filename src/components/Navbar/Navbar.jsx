@@ -1,9 +1,18 @@
 import { useState } from "react";
 import { X, Menu } from "lucide-react";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
+import { socialMedia } from "../../services/database";
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  let Links = [
+    { name: "Home", link: "/" },
+    { name: "About", link: "/about" },
+    { name: "Work", link: "/work" },
+    { name: "Contact", link: "/contact" },
+  ];
 
   return (
     <>
@@ -14,17 +23,20 @@ export default function Sidebar() {
         className="fixed flex flex-col justify-between top-0 left-0 h-svh w-full bg-white/30 backdrop-sepia-0 text-white text-lg p-6 md:w-96"
       >
         <div>
-          <p className="text-lg font-bold md:text-3xl">Sandi Sopian</p>
-          <p className="mb-6">Creative Developer</p>
+          <p className="text-xl font-bold md:text-3xl">Sandi Sopian</p>
+          <p className="mb-6">Web Developer</p>
         </div>
 
         <div className="flex justify-between items-center">
           <nav>
             <ul className="space-y-4">
-              <li className="hover:text-gray-300 cursor-pointer">Home</li>
-              <li className="hover:text-gray-300 cursor-pointer">Work</li>
-              <li className="hover:text-gray-300 cursor-pointer">About</li>
-              <li className="hover:text-gray-300 cursor-pointer">Contact</li>
+              {Links.map((link, index) => (
+                <li key={index} className="hover:text-gray-300 cursor-pointer">
+                  <NavLink to={link.link} className={({ isActive }) => (isActive ? "border-b-2 text-gray-700 hover:text-gray-300 cursor-pointer" : " font-normal")}>
+                    {link.name}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           </nav>
 
@@ -34,15 +46,11 @@ export default function Sidebar() {
         </div>
 
         <div className="bottom-6 left-6">
-          <a href="#" className="mr-4 hover:text-white">
-            Email
-          </a>
-          <a href="#" className="mr-4 hover:text-white">
-            LinkedIn
-          </a>
-          <a href="#" className="hover:text-white">
-            Mighty
-          </a>
+          {socialMedia.map((social, index) => (
+            <a key={index} href={social.socialMediaLink} target="_blank" rel="noreferrer" className="mr-2 hover:text-gray-300 cursor-pointer">
+              {social.socialMediaName}
+            </a>
+          ))}
         </div>
       </motion.div>
 
@@ -53,7 +61,7 @@ export default function Sidebar() {
           transition={{ duration: 0.5 }}
           className="fixed top-0 left-0 h-svh bg-white/30 backdrop-sepia-0 text-white w-16 flex flex-col items-center justify-between py-6 md:w-32"
         >
-          <h1 className="text-lg md:text-3xl font-semibold">SS</h1>
+          <h1 className="text-xl md:text-3xl font-bold">SS</h1>
 
           <button className="mt-6 text-gray-700 hover:text-white" onClick={() => setIsOpen(true)}>
             <Menu size={32} />
