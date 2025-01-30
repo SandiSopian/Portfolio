@@ -55,7 +55,7 @@ export default function Sidebar() {
         >
           <h1 className="text-lg md:text-3xl font-semibold">SS</h1>
 
-          <button className="mt-6 text-gray-400 hover:text-white" onClick={() => setIsOpen(true)}>
+          <button className="mt-6 text-gray-700 hover:text-white" onClick={() => setIsOpen(true)}>
             <Menu size={32} />
           </button>
 
