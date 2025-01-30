@@ -3,7 +3,7 @@ import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   return (
-    <div className="bg-indigo-600 bg-cover w-svw h-svh">
+    <div className="bg-[url(./assets/images/bg-primary.jpg)] bg-cover w-svw h-svh">
       <AppRoutes />
     </div>
   );

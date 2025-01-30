@@ -40,7 +40,7 @@ export default function Sidebar() {
             </ul>
           </nav>
 
-          <button className="absolute right-6 text-gray-400 bg-gray-700 p-2 rounded-full hover:text-white" onClick={() => setIsOpen(false)}>
+          <button className="absolute right-6 text-gray-400 bg-gray-700 p-2 rounded-full hover:text-white cursor-pointer" onClick={() => setIsOpen(false)}>
             <X size={24} />
           </button>
         </div>
@@ -59,11 +59,11 @@ export default function Sidebar() {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="fixed top-0 left-0 h-svh bg-white/30 backdrop-sepia-0 text-white w-16 flex flex-col items-center justify-between py-6 md:w-32"
+          className="fixed top-0 left-0 h-svh bg-white/30 backdrop-sepia-0 text-white w-24 md:w-32 flex flex-col items-center justify-between py-6"
         >
           <h1 className="text-xl md:text-3xl font-bold">SS</h1>
 
-          <button className="mt-6 text-gray-700 hover:text-white" onClick={() => setIsOpen(true)}>
+          <button className="mt-6 text-gray-700 hover:text-white cursor-pointer" onClick={() => setIsOpen(true)}>
             <Menu size={32} />
           </button>
 
