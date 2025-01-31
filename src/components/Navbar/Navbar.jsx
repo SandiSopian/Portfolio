@@ -20,7 +20,7 @@ export default function Sidebar() {
         initial={{ x: "-100%" }}
         animate={{ x: isOpen ? 0 : "-100%" }}
         transition={{ type: "spring", stiffness: 100, damping: 15 }}
-        className="fixed flex flex-col justify-between top-0 left-0 h-svh w-full backdrop-blur-sm text-white text-lg p-6 md:w-96"
+        className="fixed flex flex-col justify-between top-0 left-0 h-svh w-full bg-black/50 backdrop-blur-sm text-white text-lg p-6 md:w-96"
       >
         <div>
           <p className="text-2xl font-bold md:text-3xl">Sandi Sopian</p>

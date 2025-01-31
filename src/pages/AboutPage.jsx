@@ -4,7 +4,7 @@ const AboutPage = () => {
   const { profileImg, profileDescription } = about;
   return (
     <MainLayout>
-      <div className="flex flex-col h-svh text-white px-4 ml-24 md:ml-36 mt-6 md:mt-16 md:mt-0 gap-3">
+      <div className="flex flex-col h-svh text-white px-4 ml-24 md:ml-36 mt-6 md:mt-16 gap-3">
         <h1 className="text-4xl md:text-8xl">About</h1>
         <h2>{"-- A little bit about me"}</h2>
 
