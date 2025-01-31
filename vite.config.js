@@ -5,12 +5,4 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "./", // Pastikan semua asset dimuat dengan path relatif
-  build: {
-    rollupOptions: {
-      input: {
-        main: "index.html",
-      },
-    },
-  },
 });
