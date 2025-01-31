@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar/Navbar";
 
 const MainLayout = ({ children }) => {
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-svh flex flex-col">
       {/* Navbar tetap di atas */}
       <div className="fixed top-0 left-0 w-full z-50">
         <Navbar />

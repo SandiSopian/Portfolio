@@ -20,10 +20,10 @@ export default function Sidebar() {
         initial={{ x: "-100%" }}
         animate={{ x: isOpen ? 0 : "-100%" }}
         transition={{ type: "spring", stiffness: 100, damping: 15 }}
-        className="fixed flex flex-col justify-between top-0 left-0 h-svh w-full bg-white/30 backdrop-sepia-0 text-white text-lg p-6 md:w-96"
+        className="fixed flex flex-col justify-between top-0 left-0 h-svh w-full backdrop-blur-sm text-white text-lg p-6 md:w-96"
       >
         <div>
-          <p className="text-xl font-bold md:text-3xl">Sandi Sopian</p>
+          <p className="text-2xl font-bold md:text-3xl">Sandi Sopian</p>
           <p className="mb-6">Web Developer</p>
         </div>
 
@@ -32,7 +32,7 @@ export default function Sidebar() {
             <ul className="space-y-4">
               {Links.map((link, index) => (
                 <li key={index} className="hover:text-gray-300 cursor-pointer">
-                  <NavLink to={link.link} className={({ isActive }) => (isActive ? "border-b-2 text-gray-700 hover:text-gray-300 cursor-pointer" : " font-normal")}>
+                  <NavLink to={link.link} className={({ isActive }) => (isActive ? "border-b-2 hover:text-gray-300 cursor-pointer text-4xl" : " font-normal")}>
                     {link.name}
                   </NavLink>
                 </li>
@@ -61,7 +61,7 @@ export default function Sidebar() {
           transition={{ duration: 0.5 }}
           className="fixed top-0 left-0 h-svh bg-white/30 backdrop-sepia-0 text-white w-24 md:w-32 flex flex-col items-center justify-between py-6"
         >
-          <h1 className="text-xl md:text-3xl font-bold">SS</h1>
+          <h1 className="text-2xl md:text-3xl font-bold">SS</h1>
 
           <button className="mt-6 text-gray-700 hover:text-white cursor-pointer" onClick={() => setIsOpen(true)}>
             <Menu size={32} />
