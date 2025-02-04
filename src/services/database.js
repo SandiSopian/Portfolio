@@ -4,6 +4,7 @@ import ProjectImg3 from "../assets/images/project3.jpg";
 import ProjectImg4 from "../assets/images/project4.jpg";
 import ProjectImg5 from "../assets/images/project5.jpg";
 import ProfileImg from "../assets/images/profile-picture.jpg";
+import ContactImg from "../assets/images/contact-vector.png";
 
 // Social Media data
 export const socialMedia = [
@@ -79,4 +80,5 @@ export const project = [
 export const contact = {
   email: "sandis17@outlook.com",
   phone: "+6281288825373",
+  contactVector: ContactImg,
 };
