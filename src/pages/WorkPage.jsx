@@ -10,12 +10,12 @@ const WorkPage = () => {
           <h2>{"-- Selected projects"}</h2>
         </div>
 
-        <div className="flex flex-col md:grid md:grid-cols-2 md:mt-16 md:basis-5/6">
+        <div className="flex flex-col md:grid md:grid-cols-2 md:mt-48 md:basis-5/6">
           {project.map((project, index) => (
-            <div key={index} className={`relative ${index % 2 !== 0 ? "row-span-1" : "md:mt-18"}`}>
+            <div key={index} className={`relative ${index % 2 !== 0 ? "row-span-1 md:-mt-32" : "md:mt-0 md:mb-8"}`}>
               <h3 className="mb-2 hover:text-gray-300 hover:underline cursor-pointer">{project.projectTitle}</h3>
 
-              <div className="max-w-md">
+              <div className="max-w-md mb-6">
                 <div className="relative overflow-hidden">
                   <img src={project.projectImage} alt={project.projectTitle} className="w-full h-auto object-cover cursor-pointer transition duration-500 hover:scale-110" />
                 </div>
