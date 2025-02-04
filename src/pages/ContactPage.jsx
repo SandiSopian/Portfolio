@@ -19,14 +19,15 @@ const ContactPage = () => {
 
           {/* Social media */}
           <div className="flex flex-col gap-2">
-            <div>
-              <FontAwesomeIcon icon={faPhone} /> <span className="ml-1">{phone}</span>
+            <div className="flex items-center gap-1">
+              <FontAwesomeIcon icon={faPhone} />
+              {phone}
             </div>
-            <div>
+            <div className="flex items-center gap-1">
               <FontAwesomeIcon icon={faEnvelope} />
-              <span className="ml-2">
-                <a href={`mailto:${email}`}>{email}</a>
-              </span>
+              <a href={`mailto:${email}`} className="hover:text-gray-300 cursor-pointer">
+                {email}
+              </a>
             </div>
           </div>
         </div>
