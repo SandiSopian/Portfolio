@@ -34,27 +34,42 @@ export const about = {
 // Projects data
 export const project = [
   {
-    images: ProjectImg1,
+    projectImage: ProjectImg1,
     projectTitle: "UI & UX",
     projectDescription: "Designing a user interface and user experience for a website or app.",
   },
   {
-    images: ProjectImg2,
+    projectImage: ProjectImg2,
     projectTitle: "Web & Mobile App",
     projectDescription: "Brainstroming ideas into exeptional web and mobile app.",
   },
   {
-    images: ProjectImg3,
+    projectImage: ProjectImg3,
     projectTitle: "Web & Mobile App",
     projectDescription: "Brainstroming ideas into exeptional web and mobile app.",
   },
   {
-    images: ProjectImg4,
+    projectImage: ProjectImg4,
     projectTitle: "Web & Mobile App",
     projectDescription: "Brainstroming ideas into exeptional web and mobile app.",
   },
   {
-    images: ProjectImg5,
+    projectImage: ProjectImg5,
+    projectTitle: "Web & Mobile App",
+    projectDescription: "Brainstroming ideas into exeptional web and mobile app.",
+  },
+  {
+    projectImage: ProjectImg5,
+    projectTitle: "Web & Mobile App",
+    projectDescription: "Brainstroming ideas into exeptional web and mobile app.",
+  },
+  {
+    projectImage: ProjectImg5,
+    projectTitle: "Web & Mobile App",
+    projectDescription: "Brainstroming ideas into exeptional web and mobile app.",
+  },
+  {
+    projectImage: ProjectImg5,
     projectTitle: "Web & Mobile App",
     projectDescription: "Brainstroming ideas into exeptional web and mobile app.",
   },
