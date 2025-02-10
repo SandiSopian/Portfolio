@@ -24,7 +24,7 @@ const WorkPage = () => {
                 <div className="max-w-md mb-6">
                   <div className="relative overflow-hidden">
                     <a href={project.projectLink} target="_blank">
-                      <img src={project.projectImage} alt={project.projectTitle} className="w-full h-100 cursor-pointer " />
+                      <img src={project.projectImage} alt={project.projectTitle} className="w-full h-auto cursor-pointer " />
                     </a>
                   </div>
                 </div>
