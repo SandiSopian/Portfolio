@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { motion } from "framer-motion";
 import Navbar from "../components/Navbar/Navbar";
 
 const MainLayout = ({ children }) => {
@@ -9,8 +10,10 @@ const MainLayout = ({ children }) => {
         <Navbar />
       </div>
 
-      {/* Konten utama yang bisa di-scroll */}
-      <div className="flex-1 overflow-y-auto">{children}</div>
+      {/* Konten utama dengan animasi masuk */}
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: "easeOut" }} className="flex-1 overflow-y-auto">
+        {children}
+      </motion.div>
     </div>
   );
 };
