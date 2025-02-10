@@ -30,10 +30,10 @@ const ContactPage = () => {
               <FontAwesomeIcon icon={faPhone} />
               {phone}
             </div>
-            <div className="flex items-center gap-1">
-              <a href={`mailto:${email}`} className="hover:text-gray-300 cursor-pointer">
+            <div className="flex items-center gap-2">
+              <a href={`mailto:${email}`} className="hover:text-gray-300 cursor-pointer flex items-center">
                 <FontAwesomeIcon icon={faEnvelope} className="mr-1" />
-                {email}
+                <span>{email}</span>
               </a>
             </div>
           </div>
