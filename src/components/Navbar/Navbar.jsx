@@ -48,7 +48,7 @@ export default function Sidebar() {
         <div className="bottom-6 left-6">
           {socialMedia.map((social, index) => (
             <a key={index} href={social.socialMediaLink} target="_blank" rel="noreferrer" className="mr-2 hover:text-gray-300 cursor-pointer">
-              {social.socialMediaName}
+              ◽ {social.socialMediaName}
             </a>
           ))}
         </div>

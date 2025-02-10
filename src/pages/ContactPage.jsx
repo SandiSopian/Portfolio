@@ -6,6 +6,13 @@ import { contact } from "../services/database";
 const ContactPage = () => {
   const { email, phone, contactVector } = contact;
 
+  const copyToClipboard = () => {
+    navigator.clipboard
+      .writeText(phone)
+      .then(() => alert("Phone number copied success!"))
+      .catch((err) => console.error("Failed copied phone number!", err));
+  };
+
   return (
     <MainLayout>
       <div className="flex md:items-center justify-center h-screen px-4 ml-24 lg:ml-0 gap-12">
@@ -19,13 +26,13 @@ const ContactPage = () => {
 
           {/* Social media */}
           <div className="flex flex-col gap-2">
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1 hover:text-gray-300 cursor-pointer" onClick={copyToClipboard}>
               <FontAwesomeIcon icon={faPhone} />
               {phone}
             </div>
             <div className="flex items-center gap-1">
-              <FontAwesomeIcon icon={faEnvelope} />
               <a href={`mailto:${email}`} className="hover:text-gray-300 cursor-pointer">
+                <FontAwesomeIcon icon={faEnvelope} className="mr-1" />
                 {email}
               </a>
             </div>
