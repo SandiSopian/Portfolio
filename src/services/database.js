@@ -3,7 +3,7 @@ import ProjectImg2 from "../assets/images/project2.jpg";
 import ProjectImg3 from "../assets/images/project3.jpg";
 import ProjectImg4 from "../assets/images/project4.jpg";
 import ProjectImg5 from "../assets/images/project5.jpg";
-import ProjectImg6 from "../assets/images/project6.ipg";
+import ProjectImg6 from "../assets/images/project6.jpg";
 import ProfileImg from "../assets/images/profile-picture.jpg";
 import ContactImg from "../assets/images/contact-vector.png";
 
