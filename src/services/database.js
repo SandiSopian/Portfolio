@@ -2,7 +2,8 @@ import ProjectImg1 from "../assets/images/project1.jpg";
 import ProjectImg2 from "../assets/images/project2.jpg";
 import ProjectImg3 from "../assets/images/project3.jpg";
 import ProjectImg4 from "../assets/images/project4.jpg";
-import ProjectImg5 from "../assets/images/project5.png";
+import ProjectImg5 from "../assets/images/project5.jpg";
+import ProjectImg6 from "../assets/images/project6.ipg";
 import ProfileImg from "../assets/images/profile-picture.jpg";
 import ContactImg from "../assets/images/contact-vector.png";
 
@@ -63,6 +64,12 @@ export const project = [
     projectTitle: "Clean and Simple Portfolio",
     projectDescription: "I'm create clean and simple portfolio with static page",
     projectLink: "https://simple-portfolio-uiux.vercel.app/",
+  },
+  {
+    projectImage: ProjectImg6,
+    projectTitle: "Landing Page Bardi | Bardiner (Unofficial) | Created for Portfolio Purposes Only",
+    projectDescription: "A landing page project created for portfolio purposes. Designed with a modern, responsive layout and attention to detail!",
+    projectLink: "https://figma-to-nextjs-tailwindcss-slicing-6.vercel.app/",
   },
 ];
 
